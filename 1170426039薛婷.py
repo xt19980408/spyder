@@ -1,9 +1,7 @@
-import urllib.request
-import urllib.parse
-import request
-data = urllib.parse.urlencode({'wd':'兔子'})
-print(data)
-url = 'http://www.baidu.com/s?' + data
-response = urllib.request.urlopen(url)
-HTML = response.read().decode('utf8')
-print(HTML)
+coding=utf-8
+import random
+names=['刘一','陈二','张三','李四','王五','赵六','孙七','周八','吴九','郑十']
+index= random.randint(0,len(names)-1)
+print names[index]
+
+
